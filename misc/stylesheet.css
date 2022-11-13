@@ -1,16 +1,54 @@
-body {
+main {
     display: grid;
     grid-template-columns: 1fr 5fr;
 }
+.aside1 {
+    height: 100vh;
+}
 #textbox {
-    padding-right: 400px;
+    padding-bottom: 100px;
+    border: solid violet 2px;
+    width: 98%;
 }
 footer {
     text-align: center;
 }
 article {
     grid-template-rows: repeat(1fr, 5);
-    margin: 10px;
+    background-color: beige;
+    height: 100vh;
+}
+
+.topbuttons {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.bottombutton {
+    display: flex;
+    justify-content: right;
+}
+button {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+}
+
+.savebut {
+    margin-right: 15px;
+}
+
+.linkedin {
+    background-color: transparent;
+    border: none;
+}
+
+.footerbutton {
+    display: flex;
+    justify-content: center;
 }
 
 .titleheader {
@@ -19,6 +57,7 @@ article {
 }
 
 .aside1 {
+    text-align: center;
     background-color: #F9F3EC;
 }
 
@@ -34,4 +73,22 @@ article {
 }
 .notelist {
     list-style-type: square;
+}
+
+@media screen and (max-width: 600px) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    article {
+        grid-template-rows: repeat(1fr, 5);
+        background-color: beige;
+        height: 100vh;
+    }
+    .aside1 {
+        display: grid;
+        justify-content: center;
+        height: 15vh;
+    }
 }
