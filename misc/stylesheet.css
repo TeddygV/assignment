@@ -114,6 +114,10 @@ footer {
     .aside1 {
         display: grid;
         justify-content: center;
-        height: ;
+        height: 20vh;
+        margin: 0px;
+    }
+    .notelist {
+        margin:0px;
     }
 }
