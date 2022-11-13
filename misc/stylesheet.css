@@ -1,3 +1,37 @@
-section {
-    grid-template-columns: 5;
+body {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+#textbox {
+    padding-right: 400px;
+}
+footer {
+    text-align: center;
+}
+article {
+    grid-template-rows: repeat(1fr, 5);
+    margin: 10px;
+}
+
+.titleheader {
+    display: flex;
+    justify-content: center;
+}
+
+.aside1 {
+    background-color: #F9F3EC;
+}
+
+.aboutul {
+    display: flex;
+    justify-content: right;
+}
+
+.about {
+    display: inline-flex;
+    list-style-type: none;   
+    padding: 10px;
+}
+.notelist {
+    list-style-type: square;
 }
