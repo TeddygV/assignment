@@ -3,7 +3,9 @@ main {
     grid-template-columns: 1fr 4fr;
 }
 
-#textbox {
+
+
+.textbox {
     padding-bottom: 100px;
     border: solid violet 2px;
     width: 98%;
@@ -17,6 +19,12 @@ footer {
     grid-template-rows: repeat(1fr, 4);
     height: 100vh;
 }
+
+.darkthemetextarea {
+    background-color: #1e1e1e;
+    color: white;
+}
+
 
 .darkactionbutton {
     background-color: darkslategrey;
@@ -41,6 +49,12 @@ footer {
     background-color: #F9F3EC;
     color: black;
 }
+
+.lightthemetextarea {
+    background-color: #F9F3EC;
+    color: black;
+}
+
 
 .topbuttons {
     display: flex;
